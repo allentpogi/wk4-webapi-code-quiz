@@ -153,6 +153,7 @@ var showQuestions = function(event) {
 
     // display question as header
     question.textContent = quizQuestions[i].question;
+    question.setAttribute('style', 'font-size: 1rem');
     
     // get the answer choices to the question
     for(letter in quizQuestions[i].answers){
@@ -221,11 +222,12 @@ function validateUserAnswer() {
         var enterInitials = document.createElement("input");
         enterInitials.id = "initials";
         enterInitials.type = "text";
-        enterInitials.setAttribute('style', 'text-align: left');
+        enterInitials.setAttribute('style', 'text-align: left; width: max-content');
         var initialLabel = document.createElement("label");
         initialLabel.id = "initialsLabel";
         initialLabel.htmlFor = "initials";
         initialLabel.textContent = 'Enter your initials: ';
+        initialLabel.setAttribute('style', 'text-align: left; width: max-content');
         //display submit button
         var submitInitials = document.createElement("button");
         submitInitials.id = "submitInitials";
@@ -233,7 +235,7 @@ function validateUserAnswer() {
         //bring it all together and add to the html
         choiceArea.appendChild(initialLabel);
         choiceArea.appendChild(enterInitials);
-        choiceArea.setAttribute('style', 'display: flex; width: 60%; flex-direction: column; align-items: flex-start');
+        choiceArea.setAttribute('style', 'display: flex; justify-content: space-between; flex-direction: column; align-items: flex-start');
         quizConent.appendChild(submitInitials);
         submitInitials.setAttribute('style', 'margin-top: 2rem; background-color: black; border-radius: 10px; padding-left: 3rem; padding-right: 3rem; color: white; font-weight: bold; letter-spacing: 1px; font-size: larger;');
 
