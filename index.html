@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<!-- Head -->
+<head>
+    <title>Allen Pogi Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<!-- body -->
+<body>
+    <!-- View high score & timer-->
+    <header class = 'top'>
+    <nav>
+        <a href=./assets/pages/highscore.html class="high-score">High scores</a>
+    </nav>
+        <time id = 'countdown'></time>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <!-- Header-->
+        <header>
+            <h1 class = 'quiz-header'>Code Quiz</h1>
+        </header>
+        <div class = 'quiz-box'>
+            <p class = 'quiz-content'>
+                You will get 1 point for each correct answer.
+                <br>
+                At the end of the Quiz, your total score will be displayed.
+                <br>
+                Maximum score is 10 points.
+                <br><br>
+                Click start to begin the quiz.
+                <br><br>
+            </p>
+            <hr>
+            <button class = 'start-button'>
+                Start
+            </button>
+        </div>
+
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

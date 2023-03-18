@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<!-- Head -->
+<head>
+    <title>High scores</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main section -->
+    <main>
+        <!-- Header-->
+        <header>
+            <h1 class = 'high-score-header'>High scores</h1>
+        </header>
+        <div class = 'high-score-list'>
+            <table id="myTable">
+                <thead>
+                   <tr>
+                    <th>Player</th>
+                    <th>Score</th>
+                </tr>
+                </thead>
+               <tbody id="datas">
+            
+               </tbody>
+            
+            </table>
+        </div>
+
+        <div class="high-score-buttons">
+            <button class = 'clear-button'>
+                Clear
+            </button>
+            <button class = 'back-button'>
+                Back
+            </button>
+        </div>
+
+    </main>
+    <script src="./js/highscore_script.js"></script>
+</body>
+
+</html>
